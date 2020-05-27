@@ -81,41 +81,18 @@ const processType = (message, params) => {
 
 	return diceOrder(params).map(die => {
 		switch (die) {
-			case 'yellow':
-			case 'y':
-			case 'proficiency':
-			case 'pro':
+			case 'p':
 				return 'yellow';
-			case 'green':
-			case 'g':
-			case 'ability':
 			case 'a':
 				return 'green';
-			case 'blue':
 			case 'b':
-			case 'boost':
-			case 'boo':
 				return 'blue';
-			case 'red':
-			case 'r':
-			case 'challenge':
 			case 'c':
 				return 'red';
-			case 'purple':
-			case 'p':
-			case 'difficulty':
 			case 'd':
 				return 'purple';
-			case 'black':
-			case 'blk':
-			case 'k':
 			case 's':
-			case 'sb':
-			case 'setback':
 				return 'black';
-			case 'white':
-			case 'w':
-			case 'force':
 			case 'f':
 				return 'white';
 			case 'success':
